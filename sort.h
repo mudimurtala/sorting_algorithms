@@ -18,4 +18,9 @@ typedef struct listint_s
 
 void print_array(const int *array, size_t size);
 
+
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 #endif
