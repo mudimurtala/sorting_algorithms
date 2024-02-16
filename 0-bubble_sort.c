@@ -8,12 +8,12 @@
 */
 void bubble_sort(int *array, size_t size)
 {
+    size_t i, j;
+    int temp, flag;
+
     /** Checking for null pointer or size < 2 **/
     if (array == NULL || size < 2)
         return;
-
-    size_t i, j;
-    int temp, flag;
 
     /** This's the outer loop: each pass through the array **/
     for (i = 0; i < size - 1; i++)
@@ -31,6 +31,7 @@ void bubble_sort(int *array, size_t size)
                 array[j + 1] = temp;
                 /** Indicates that a swap occur **/
                 flag = 1;
+
                 print_array(array, size);
             }
         }
