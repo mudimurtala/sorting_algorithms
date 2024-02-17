@@ -42,6 +42,7 @@ void insertion_sort_list(listint_t **list)
 
             /** Adjust the pointers after swapping **/
             current = current->prev;
+            print_list(*list);
         }
 
         /** Move to the next node to be sorted **/
