@@ -14,14 +14,14 @@ void quick_sort(int *array, size_t size)
 
 	if (low < high)
 	{
-		partition = lom_part(array, low, high, size);
+		partition = seg_ment(array, low, high, size);
 		quick_sort(array, (partition - 1) - low);
 		quick_sort(array, high - (partition + 1));
 	}
 }
 
 /**
- * lom_part - Implementation of the lomuto partition
+ * seg_ment - A partition
  * @array: Array to partition
  * @low: Lower band
  * @high: Higher band
@@ -29,7 +29,7 @@ void quick_sort(int *array, size_t size)
  *
  * Return: Index of partition
  */
-int lom_part(int *array, int low, int high, size_t size)
+int seg_ment(int *array, int low, int high, size_t size)
 {
 	int pivot = array[high];
 	int i = low - 1, j;
