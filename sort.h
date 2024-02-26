@@ -4,6 +4,8 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
+#include <c++/11/bits/ranges_util.h>
 
 /**
  * struct listint_s - Doubly linked list node
