@@ -28,7 +28,10 @@ void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 int seg_ment(int *array, int low, int high, size_t size);
 void swap(int *array, int i, int j, size_t size);
-void swapp(int *array, int item1, int item2);
 void shell_sort(int *array, size_t size);
+void swap_ints(int *a, int *b);
+void swap_node_ahead(listint_t **list, listint_t **tail, listint_t **shaker);
+void swap_node_behind(listint_t **list, listint_t **tail, listint_t **shaker);
+void cocktail_sort_list(listint_t **list);
 
 #endif
